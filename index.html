@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हिंदी साहित्य पुस्तकालय | Hindi Sahitya Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 3D Animated Header -->
+    <header class="dark-header">
+        <div class="container">
+            <div class="logo hover-light" id="homeLink">
+                <i class="fas fa-book-open"></i>
+                <h1>हिंदी साहित्य पुस्तकालय</h1>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="hover-light"><a href="#" id="navHome">होम</a></li>
+                    <li class="hover-light"><a href="#" id="navAuthors">लेखक</a></li>
+                    <li class="hover-light"><a href="#" id="navBooks">पुस्तकें</a></li>
+                    <li class="hover-light"><a href="#" id="navGenres">विधाएँ</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <div class="search-bar hover-light">
+                    <input type="text" id="bookSearch" placeholder="पुस्तक खोजें...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Index Page -->
+        <section id="indexPage">
+            <h2 class="section-title">प्रमुख भारतीय लेखक</h2>
+            <div class="index-container" id="authorsIndex">
+                <!-- Author cards will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Author Pages -->
+        <div id="authorPagesContainer">
+            <!-- Author pages will be dynamically loaded here -->
+        </div>
+
+        <!-- Book Viewer Section -->
+        <div class="book-viewer-container hover-light">
+            <div id="viewerCanvas"></div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://www.google.com/books/jsapi.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
